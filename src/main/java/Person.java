@@ -1,6 +1,7 @@
 package src.main.java;
 
 import java.time.LocalDate;
+import java.time.Period;
 
 public class Person {
 
@@ -37,6 +38,17 @@ public class Person {
 
     public String getEmailAddress() {
         return emailAddress;
+    }
+    public int getAge() {
+       if(birthday == null){
+           return -1;
+       }
+       LocalDate currentDate = LocalDate.now();
+       return Period.between(birthday, currentDate).getYears();
+    }
+
+    public void printPerson() {
+        // ...
     }
 
 }
