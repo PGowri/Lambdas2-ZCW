@@ -23,4 +23,20 @@ public class Person {
         this.emailAddress = emailAddress;
     }
 
+    public void setBirthday(LocalDate birthday) {
+        this.birthday = birthday;
+    }
+
+    public Sex getGender() {
+        return gender;
+    }
+
+    public void setGender(Sex gender) {
+        this.gender = gender;
+    }
+
+    public String getEmailAddress() {
+        return emailAddress;
+    }
+
 }
